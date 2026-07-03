@@ -6,13 +6,10 @@ function Nav() {
       <div>
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="countries">Countries</NavLink>
           </li>
           <li>
-            <NavLink to="/pricing">Pricing</NavLink>
-          </li>
-          <li>
-            <NavLink to="/product">Product</NavLink>
+            <NavLink to="cities">Cities</NavLink>
           </li>
         </ul>
       </div>
