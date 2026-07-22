@@ -1,5 +1,6 @@
 import styles from "./City.module.css";
-
+import ButtonBack from "./ButtonBack";
+import { useParams, useSearchParams } from "react-router-dom";
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
@@ -17,6 +18,8 @@ function City() {
     notes: "My favorite city so far!",
   };
 
+  const { id } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const { cityName, emoji, date, notes } = currentCity;
 
   return (

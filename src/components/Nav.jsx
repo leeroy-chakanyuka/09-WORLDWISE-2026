@@ -6,10 +6,11 @@ function Nav() {
       <div>
         <ul>
           <li>
-            <NavLink to="countries">Countries</NavLink>
+            <NavLink to="cities">Cities</NavLink>
           </li>
           <li>
-            <NavLink to="cities">Cities</NavLink>
+            {/* its important to notice that this here says to="xyz" and not to="/xyz" otherwise it would be an absolute path */}
+            <NavLink to="countries">Countries</NavLink>
           </li>
         </ul>
       </div>
