@@ -1,5 +1,6 @@
 import styles from "./CityItem.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const formatDate = (date) => {
   return new Intl.DateTimeFormat("en", {
     year: "numeric",
@@ -11,6 +12,7 @@ const formatDate = (date) => {
 function CityItem({ city }) {
   console.log(`in the city item now `);
   console.log(city);
+  const nav = useNavigate();
 
   return (
     <li>
